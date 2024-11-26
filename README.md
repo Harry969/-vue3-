@@ -1,6 +1,6 @@
 # 🌟 Cursor_Blog
 
-使用Cursor基于TS的个人博客系统与自动化工具集。
+使用Cursor基于Vue、TS的个人博客系统与自动化工具集。
 
 ## ✨ 主要功能
 
@@ -20,15 +20,15 @@
 
 ## 🚀 快速开始
 
-# 克隆项目
+## 克隆项目
 
 git clone git@github.com:Harry969/Cursor_Blog.git
 
-# 安装依赖
+## 安装依赖
 
 npm install
 
-# 启动开发服务器
+## 启动开发服务器
 
 npm run dev
 

@@ -32,6 +32,17 @@ import operateBlogPlugin from './plugins/operate-blog'
 const promises: Promise<any>[] = []
 
 export default defineConfig({
+  base: '/Harry969.github.io/', // 设置为 GitHub 仓库名称
+  build: {
+    outDir: 'dist', // 生成的静态文件放在 dist 目录
+    assetsDir: '', // 将静态资源放到 dist 目录的根下，不再嵌套
+    rollupOptions: {
+      output: {
+        // 处理路径映射，确保在构建时路径正确
+        manualChunks: undefined,
+      },
+    },
+  },
   css: {
     postcss: {
       plugins: [tailwind(), autoprefixer()],
@@ -43,10 +54,6 @@ export default defineConfig({
       '@/': `${path.resolve(__dirname, 'src')}/`,
     },
   },
-  build: {
-    target: 'esnext', // browsers can handle the latest ES features
-  },
-
   plugins: [
 
     operateBlogPlugin(),
@@ -273,8 +280,7 @@ async function generateOg(title: string, output: string, date: string) {
     line2: lines[1] || date,
     line3: lines[2] || date,
   }
-  const svg = ogSVg.replace(/\{\{([^}]+)}}/g, (_, name) => data[name] || '')
-
+  const svg = ogSVg.replace(/\{\{([^}]+)\}\}/g, (_, name) => data[name] || '')
   // eslint-disable-next-line no-console
   console.log(`Generating ${output}`)
   try {

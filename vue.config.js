@@ -1,3 +1,3 @@
 module.exports = {
-  publicPath: './', // 这样设置是为了支持 GitHub Pages 的相对路径
+  publicPath: '/', // 适用于部署在 GitHub Pages 的根路径上
 }

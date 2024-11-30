@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { RouterView } from 'vue-router'
 import { AppSetup } from './utils/app'
 
 AppSetup()
@@ -7,3 +8,6 @@ AppSetup()
 <template>
   <RouterView />
 </template>
+
+<style>
+</style>

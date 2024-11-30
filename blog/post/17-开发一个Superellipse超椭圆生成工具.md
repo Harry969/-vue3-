@@ -84,7 +84,7 @@ async function getSuperellipsePath(
 
 # 在线预览
 
-https://superellipse.mmeme.me/
+https://superellipse.harry.ocybers.com/
 
 # 代码仓库
 

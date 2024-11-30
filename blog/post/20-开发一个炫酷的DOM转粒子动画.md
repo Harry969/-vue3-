@@ -149,6 +149,6 @@ img {
 
 总的来说，因为样式炫目，才引起的兴趣研究一下这个。虽然代码量不多，不过还是有点意思。如果可以自定义传入粒子效果，而不是只有这两种，那应该更好用些。希望在 GitHub 仓库上帮我点个 star 🥺
 
-Demo 及文档预览 : <https://html2particle.mmeme.me/guide/demo.html>\
+Demo 及文档预览 : <https://html2particle.harry.ocybers.com/guide/demo.html>\
 NPM 包地址 : <https://www.npmjs.com/package/html2particle>\
 GitHub 仓库地址 : <https://github.com/pinky-pig/html2particle>

@@ -8,4 +8,4 @@ cover: https://cdn.jsdelivr.net/gh/pinky-pig/pic-bed/images20240222111638.png
 
 [[toc]]
 
-[EncodeSVG 网站](https://encodesvg.mmeme.me/)
+[EncodeSVG 网站](https://encodesvg.harry.ocybers.com/)

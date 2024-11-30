@@ -12,8 +12,8 @@
     <meta name="description" content="Harry's 个人小站" />
     <meta property="og:title" content="Harry's 个人小站" />
     <meta property="og:description" content="首页 | 卡片 | 博客" />
-    <meta property="og:url" content="https://mmeme.me" />
-    <meta property="og:image" content="https://mmeme.me/default-og.png" />
+    <meta property="og:url" content="https://harry.ocybers.com" />
+    <meta property="og:image" content="https://harry.ocybers.com/default-og.png" />
     <meta property="og:image:username" content="Harry" />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="zh_CN" />
@@ -26,9 +26,7 @@
 
     <script>
       ;(function () {
-        const prefersDark =
-          window.matchMedia &&
-          window.matchMedia('(prefers-color-scheme: dark)').matches
+        const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
         const setting = localStorage.getItem('vueuse-color-scheme') || 'auto'
         if (setting === 'dark' || (prefersDark && setting !== 'light'))
           document.documentElement.classList.toggle('dark', true)
@@ -53,14 +51,7 @@
   <body class="font-sans">
     <div id="app"></div>
     <script type="module" src="/src/main.ts"></script>
-    <noscript>
-      This website requires JavaScript to function properly. Please enable
-      JavaScript to continue.
-    </noscript>
-    <script
-      async
-      src="https://platform.twitter.com/widgets.js"
-      charset="utf-8"
-    ></script>
+    <noscript> This website requires JavaScript to function properly. Please enable JavaScript to continue. </noscript>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
   </body>
 </html>

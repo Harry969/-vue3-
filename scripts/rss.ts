@@ -6,7 +6,7 @@ import MarkdownIt from 'markdown-it'
 import type { FeedOptions, Item } from 'feed'
 import { Feed } from 'feed'
 
-const DOMAIN = 'https://mmeme.me'
+const DOMAIN = 'https://harry.ocybers.com'
 const AUTHOR = {
   name: 'Harry',
   email: 'w2545589993@gmail.com',
@@ -28,13 +28,13 @@ async function buildBlogRSS() {
   const options = {
     title: 'Harry',
     description: 'Harry\' Blog',
-    id: 'https://mmeme.me/',
-    link: 'https://mmeme.me/',
+    id: 'https://harry.ocybers.com/',
+    link: 'https://harry.ocybers.com/',
     copyright: 'CC BY-NC-SA 4.0 2021 © Anthony Fu',
     feedLinks: {
-      json: 'https://mmeme.me/feed.json',
-      atom: 'https://mmeme.me/feed.atom',
-      rss: 'https://mmeme.me/feed.xml',
+      json: 'https://harry.ocybers.com/feed.json',
+      atom: 'https://harry.ocybers.com/feed.atom',
+      rss: 'https://harry.ocybers.com/feed.xml',
     },
   }
   const posts: any[] = (
@@ -71,8 +71,8 @@ async function buildBlogRSS() {
 
 async function writeFeed(name: string, options: FeedOptions, items: Item[]) {
   options.author = AUTHOR
-  options.image = 'https://mmeme.me/avatar.png'
-  options.favicon = 'https://mmeme.me/logo.png'
+  options.image = 'https://harry.ocybers.com/avatar.png'
+  options.favicon = 'https://harry.ocybers.com/logo.png'
 
   const feed = new Feed(options)
 
